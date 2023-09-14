@@ -1,0 +1,52 @@
+.toDo-list {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgb(207, 204, 204, 0.3);
+}
+
+.toDo-list-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.title-list {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  resize: none;
+  height: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: rgb(74, 71, 71);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.description-list {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  resize: none;
+  height: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: rgb(74, 71, 71);
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+strong {
+  color: black;
+}
