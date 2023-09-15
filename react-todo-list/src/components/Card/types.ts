@@ -1,4 +1,4 @@
-import { IToDoForm } from "../ToDoForm/types";
+import { IToDoForm } from "../../containers/ToDoForm/types";
 
 export interface ToDoListProps {
   toDoData: IToDoForm[];
