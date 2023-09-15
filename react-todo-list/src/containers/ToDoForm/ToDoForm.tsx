@@ -15,24 +15,11 @@ export const ToDoForm = ({ setFormDataHandler }: IProps) => {
   const titleHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setTitle(value);
-
-    if (value.trim() === "") {
-      setTitleError("* Input field");
-    } else {
-      setTitleError(null);
-    }
   };
 
   const descriptionHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setDescription(value);
-
-    if (value.trim() === "") {
-      console.log("description error");
-      setDescriptionError("* Input field");
-    } else {
-      setDescriptionError(null);
-    }
   };
 
   const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
@@ -53,6 +40,8 @@ export const ToDoForm = ({ setFormDataHandler }: IProps) => {
 
     setTitle("");
     setDescription("");
+    setTitleError(null);
+    setDescriptionError(null);
   };
 
   return (
